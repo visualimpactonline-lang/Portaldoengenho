@@ -84,7 +84,7 @@ function Header({page,setPage}){
   return <header>
     <div className="topbar">
       <span><MapPin size={14}/> {endereco}</span>
-      <span><Phone size={14}/> (19) 99999-9999</span>
+      <span><Phone size={14}/> (19) 97124-8417</span>
       <span><Clock size={14}/> Seg a Sex: 11h às 15h | 18h às 23h</span>
     </div>
     <nav className="nav">
@@ -166,7 +166,7 @@ function Dish({p}){
 
 function InfoCards(){
   return <section className="section infoCards three">
-    <div className="info"><WhatsAppIcon size={38}/><h3>Reservas e pedidos</h3><p>Faça sua reserva ou pedido pelo WhatsApp.</p><a href={zap()} target="_blank">(19) 99999-9999</a></div>
+    <div className="info"><WhatsAppIcon size={38}/><h3>Reservas e pedidos</h3><p>Faça sua reserva ou pedido pelo WhatsApp.</p><a href={zap()} target="_blank">(19) 97124-8417</a></div>
     <div className="info"><MapPin/><h3>Localização</h3><p>Rua Luiz de Queiroz, 113<br/>Centro, Piracicaba - SP</p><a href={mapaUrl} target="_blank">Ver no mapa</a></div>
     <div className="info"><Clock/><h3>Horários</h3><p>Seg a Sex 11h às 15h | 18h às 23h<br/>Domingos 11h às 16h</p><span>Aberto agora</span></div>
   </section>
@@ -258,7 +258,7 @@ function Footer({setPage}){
     <div className="footerGrid">
       <div><h3>PORTAL DO ENGENHO</h3><p>Tradição, sabor e experiências inesquecíveis em Piracicaba.</p></div>
       <div><h4>Navegação</h4>{["home","cardapio","historia","galeria","contato"].map(p=><button key={p} onClick={()=>setPage(p)}>{p==="home"?"Início":p[0].toUpperCase()+p.slice(1)}</button>)}</div>
-      <div><h4>Contato</h4><p>(19) 99999-9999<br/>Rua Luiz de Queiroz, 113<br/>Centro, Piracicaba - SP</p></div>
+      <div><h4>Contato</h4><p>(19) 97124-8417<br/>Rua Luiz de Queiroz, 113<br/>Centro, Piracicaba - SP</p></div>
       <div><h4>Siga-nos</h4><div className="social"><Instagram/><Facebook/><a href={zap()} target="_blank"><WhatsAppIcon size={28}/></a></div></div>
     </div>
     <small>© 2026 Portal do Engenho. Desenvolvido para apresentação comercial.</small>
