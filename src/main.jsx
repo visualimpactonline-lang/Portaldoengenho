@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { MapPin, Phone, Clock, Star, Menu, X, Instagram, Facebook, Car, Utensils, CalendarDays, ChevronRight, Wine, Coffee, Soup, Fish, Beef, Salad } from "lucide-react";
 import "./styles.css";
 
-const WA = "5519999999999";
+const WA = "5519971248417";
 const endereco = "Rua Luiz de Queiroz, 113 - Centro, Piracicaba - SP, 13400-780";
 const mapaUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(endereco)}`;
 
