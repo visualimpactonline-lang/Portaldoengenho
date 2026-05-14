@@ -173,11 +173,11 @@ function InfoCards(){
 }
 
 function Reviews(){
-  const rs = ["A melhor parmegiana que já comi na vida! Atendimento impecável e ambiente maravilhoso.","Todo prato que pedimos estava perfeito. Voltaremos sempre!","Lugar incrível, comida deliciosa e atendimento nota 10.","Referência em Piracicaba! Parmegiana sensacional."];
+  const rs = ["Todo prato que se pede neste restaurante é excelente, mas o Parmegiana é excepcionalmente delicioso.","Experiência sensacional. Comida com sabor a preço justo. Sugerimos o Filé a Cubana mas também tem o Parmegiana, muito bom.","Atendimento excelente, ambiente agradável e comida impecável. O spaghetti com camarão estava simplesmente delicioso.","Referência em Piracicaba! Parmegiana sensacional."];
   return <section className="section">
     <p className="eyebrow green">Avaliações de clientes</p>
     <div className="reviews">
-      <div className="score"><b>4,8</b><Stars/><p>Baseado em mais de 1.000 avaliações</p></div>
+      <div className="score"><b>4,6</b><Stars/><p>Baseado em mais de 1.000 avaliações</p></div>
       {rs.map((r,i)=><div className="review" key={i}><Stars/><p>{r}</p><small>Cliente Google</small></div>)}
     </div>
   </section>
