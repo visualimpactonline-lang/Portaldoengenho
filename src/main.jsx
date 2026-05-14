@@ -89,7 +89,6 @@ function Header({page,setPage}){
     </div>
     <nav className="nav">
       <button className="brand" onClick={()=>setPage("home")}>
-        <div className="brandIcon">PE</div>
         <div><b>PORTAL DO<br/>ENGENHO</b><small>Desde 1988</small></div>
       </button>
       <button className="mobile" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button>
