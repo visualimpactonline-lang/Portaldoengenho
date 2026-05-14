@@ -81,17 +81,25 @@ const galeria = [
 function Header({page,setPage}){
   const [open,setOpen]=useState(false);
   const links = [["home","Início"],["cardapio","Cardápio"],["historia","História"],["galeria","Galeria"],["contato","Contato"]];
+
   return <header>
     <div className="topbar">
       <span><MapPin size={14}/> {endereco}</span>
       <span><Phone size={14}/> (19) 97124-8417</span>
       <span><Clock size={14}/> Seg a Sex: 11h às 15h | 18h às 23h</span>
     </div>
+
     <nav className="nav">
-      <button className="brand" onClick={()=>setPage("home")}>
-        <div><b>PORTAL DO<br/>ENGENHO</b><small>Desde 1988</small></div>
+      <button className="brand" onClick={()=>setPage("home")} aria-label="Ir para o início">
+        <b>
+          PORTAL DO<br />
+          ENGENHO
+        </b>
+        <small>Desde 1988</small>
       </button>
+
       <button className="mobile" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button>
+
       <div className={open?"links show":"links"}>
         {links.map(([id,label])=><button key={id} onClick={()=>{setPage(id);setOpen(false)}} className={page===id?"active":""}>{label}</button>)}
         <a className="reserve" href={zap()} target="_blank"><WhatsAppIcon size={18}/> Reservar / Pedir</a>
